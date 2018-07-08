@@ -22,7 +22,7 @@ body{
   display: block;
   width: 104px;
   height: 56px;
-  background: url("/assets/images/logo.svg") no-repeat center;
+  background: url("assets/images/logo.svg") no-repeat center;
   background-size: contain;
 }
 .layout{
@@ -30,13 +30,13 @@ body{
   margin: 0 auto;
 }
 .icon-arrow-bottom{
-  background: url("/assets/images/arrow-right.png") no-repeat center;
+  background: url("assets/images/arrow-right.png") no-repeat center;
   background-size: contain;
   transform: rotate(90deg);
   filter: invert(100%);
 }
 .icon-arrow-right{
-  background: url("/assets/images/arrow-right.png") no-repeat center;
+  background: url("assets/images/arrow-right.png") no-repeat center;
   background-size: contain;
 }
 .ex-btn{
@@ -117,7 +117,7 @@ body{
   height: 640px;
   padding: 48px 56px;
   color: #fff;
-  background: url("/assets/images/back_null_percents.jpg") no-repeat center;
+  background: url("assets/images/back_null_percents.jpg") no-repeat center;
   .welcome-header {
     display: flex;
     justify-content: space-between;
@@ -261,31 +261,31 @@ body{
     background-size: contain;
   }
   .social-network-vk {
-    @include background-2x( '/assets/images/VK@2x', 'png', center);
+    @include background-2x( 'assets/images/VK@2x', 'png', center);
   }
   .social-network-ok {
-    @include background-2x( '/assets/images/Ok@2x', 'png', center);
+    @include background-2x( 'assets/images/Ok@2x', 'png', center);
   }
   .social-network-tw {
-    @include background-2x( '/assets/images/Twitter@2x', 'png', center);
+    @include background-2x( 'assets/images/Twitter@2x', 'png', center);
   }
   .social-network-fb {
-    @include background-2x( '/assets/images/Facebook@2x', 'png', center);
+    @include background-2x( 'assets/images/Facebook@2x', 'png', center);
   }
   .social-network-yu {
-    @include background-2x( '/assets/images/Youtube@2x', 'png', center);
+    @include background-2x( 'assets/images/Youtube@2x', 'png', center);
   }
   .social-network-in {
-    @include background-2x( '/assets/images/LinkedIn@2x', 'png', center);
+    @include background-2x( 'assets/images/LinkedIn@2x', 'png', center);
   }
   .social-network-ks {
-    @include background-2x( '/assets/images/Ksin@2x', 'png', center);
+    @include background-2x( 'assets/images/Ksin@2x', 'png', center);
   }
   .social-network-it {
-    @include background-2x( '/assets/images/Instagram@2x', 'png', center);
+    @include background-2x( 'assets/images/Instagram@2x', 'png', center);
   }
   .social-network-gl {
-    @include background-2x( '/assets/images/Google@2x', 'png', center);
+    @include background-2x( 'assets/images/Google@2x', 'png', center);
   }
   a.footer-links-group-head {
     color: #fff;
@@ -491,11 +491,11 @@ body{
         text-align: center;
       }
       &:before{
-        background: url("/assets/images/arrow-left.png") no-repeat center;
+        background: url("assets/images/arrow-left.png") no-repeat center;
         left: 0;
       }
       &:after{
-        background: url("/assets/images/arrow-right.png") no-repeat center;
+        background: url("assets/images/arrow-right.png") no-repeat center;
         right: 0;
       }
       &:before, &:after{
