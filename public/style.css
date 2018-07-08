@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe-Bold.eot');
+    src: url('/assets/fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe-Bold.woff') format('woff'),
+    url('/assets/fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe-Light.eot');
+    src: url('/assets/fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe-Light.woff') format('woff'),
+    url('/assets/fonts/Circe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe-Regular.eot');
+    src: url('/assets/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe-Regular.woff') format('woff'),
+    url('/assets/fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe-ExtraLight.eot');
+    src: url('/assets/fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe-ExtraLight.woff') format('woff'),
+    url('/assets/fonts/Circe-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+body {
+  font-family: 'Circe', sans-serif;
+  background: #fff; }
+
+.brand-logo {
+  display: block;
+  width: 104px;
+  height: 56px;
+  background: url("/assets/images/logo.svg") no-repeat center;
+  background-size: contain; }
+
+.layout {
+  width: 1280px;
+  margin: 0 auto; }
+
+.icon-arrow-bottom {
+  background: url("/assets/images/arrow-right.png") no-repeat center;
+  background-size: contain;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: invert(100%);
+          filter: invert(100%); }
+
+.icon-arrow-right {
+  background: url("/assets/images/arrow-right.png") no-repeat center;
+  background-size: contain; }
+
+.ex-btn {
+  border: none;
+  outline: none;
+  height: 72px;
+  padding: 0 23px;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase; }
+  .ex-btn.ex-btn-primary {
+    color: #000;
+    background: #ffcf00; }
+  .ex-btn .ex-btn-arrow {
+    display: inline-block;
+    width: 24px;
+    height: 24px; }
+  .ex-btn:hover.ex-btn-primary {
+    color: #5f5f5f; }
+
+.ex-input-wrapper input.ex-input {
+  display: block;
+  height: 72px;
+  padding: 0 23px;
+  border: 1px transparent;
+  background: #efefef;
+  font-size: 14px;
+  outline: none; }
+  .ex-input-wrapper input.ex-input:focus {
+    background: #fff;
+    border: 1px #dedede solid;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.12);
+    color: #000; }
+
+.ex-input-wrapper .ex-input-example {
+  font-size: 11px;
+  line-height: 146%;
+  color: #9b9b9b;
+  margin-top: 10px;
+  padding: 0 23px;
+  text-align: left; }
+
+.language-selector .current-lang {
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-items: center;
+          align-items: center; }
+  .language-selector .current-lang > span {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 11px; }
+  .language-selector .current-lang .dropdown-toggle {
+    width: 24px;
+    height: 24px;
+    color: #d1d1d1;
+    display: inline-block; }
+    .language-selector .current-lang .dropdown-toggle:hover {
+      color: #e8e8e8; }
+
+#welcome {
+  position: relative;
+  height: 640px;
+  padding: 48px 56px;
+  color: #fff;
+  background: url("/assets/images/back_null_percents.jpg") no-repeat center; }
+  #welcome .welcome-header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between; }
+  #welcome .welcome-header-links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    margin-top: 5px; }
+    #welcome .welcome-header-links .language-selector {
+      margin-right: 30px; }
+    #welcome .welcome-header-links a {
+      line-height: 24px;
+      color: #ffcf00;
+      text-transform: uppercase;
+      font-size: 11px;
+      text-decoration: none;
+      margin-right: 10px; }
+      #welcome .welcome-header-links a:last-child {
+        margin-right: 0; }
+  #welcome .welcome-h1 {
+    font-size: 66px;
+    font-weight: 300;
+    margin-top: 155px;
+    line-height: 110%; }
+  #welcome .welcome-h4 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 134%; }
+  #welcome .welcome-buttons {
+    margin-top: 40px; }
+    #welcome .welcome-buttons a.ex-btn {
+      width: 304px; }
+
+#zero-percent {
+  display: -webkit-flex;
+  display: flex;
+  background: #ffcf00;
+  height: 400px;
+  position: relative;
+  padding: 45px 56px; }
+  #zero-percent .zero-percent-left {
+    width: 50%;
+    padding-left: 28px; }
+  #zero-percent .zero-percent-left-text-1 {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: bold;
+    left: 45px;
+    top: 303px;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+  #zero-percent .zero-percent-left-text-2 {
+    font-size: 299px;
+    line-height: 281px;
+    font-weight: 300;
+    text-align: center; }
+  #zero-percent .zero-percent-left-text-3 {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: bold;
+    text-align: center; }
+  #zero-percent .zero-percent-right {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center; }
+  #zero-percent .zero-percent-right-text-1 {
+    font-size: 40px;
+    line-height: 120%; }
+
+#payment-methods {
+  text-align: center;
+  padding: 39px; }
+  #payment-methods .payment-methods-h3 {
+    font-size: 40px;
+    line-height: 120%; }
+  #payment-methods .payment-methods-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+            justify-content: center;
+    padding: 40px 0;
+    margin: -20px -30px; }
+  #payment-methods .payment-methods-method {
+    margin: 20px 30px; }
+  #payment-methods .payment-methods-register {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin: 0 -16px; }
+    #payment-methods .payment-methods-register .ex-input-wrapper {
+      margin: 0 8px; }
+      #payment-methods .payment-methods-register .ex-input-wrapper input {
+        width: 328px; }
+    #payment-methods .payment-methods-register button.ex-btn {
+      margin: 0 8px;
+      width: 304px; }
+  #payment-methods .payment-methods-disclaimer {
+    font-size: 14px;
+    line-height: 143%;
+    margin: 30px auto 0;
+    width: 525px; }
+    #payment-methods .payment-methods-disclaimer a {
+      color: #0085f7; }
+
+#footer {
+  padding: 0 56px 70px 56px;
+  background: #232323; }
+  #footer .footer-social-networks {
+    display: -webkit-flex;
+    display: flex;
+    height: 88px;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    border-bottom: 1px solid #464646; }
+  #footer a.footer-social-network {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    background-size: contain; }
+  #footer .social-network-vk {
+    background-image: url("/assets/images/VK@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-vk {
+        background-image: url("/assets/images/VK@2x@2x.png"); } }
+  #footer .social-network-ok {
+    background-image: url("/assets/images/Ok@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-ok {
+        background-image: url("/assets/images/Ok@2x@2x.png"); } }
+  #footer .social-network-tw {
+    background-image: url("/assets/images/Twitter@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-tw {
+        background-image: url("/assets/images/Twitter@2x@2x.png"); } }
+  #footer .social-network-fb {
+    background-image: url("/assets/images/Facebook@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-fb {
+        background-image: url("/assets/images/Facebook@2x@2x.png"); } }
+  #footer .social-network-yu {
+    background-image: url("/assets/images/Youtube@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-yu {
+        background-image: url("/assets/images/Youtube@2x@2x.png"); } }
+  #footer .social-network-in {
+    background-image: url("/assets/images/LinkedIn@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-in {
+        background-image: url("/assets/images/LinkedIn@2x@2x.png"); } }
+  #footer .social-network-ks {
+    background-image: url("/assets/images/Ksin@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-ks {
+        background-image: url("/assets/images/Ksin@2x@2x.png"); } }
+  #footer .social-network-it {
+    background-image: url("/assets/images/Instagram@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-it {
+        background-image: url("/assets/images/Instagram@2x@2x.png"); } }
+  #footer .social-network-gl {
+    background-image: url("/assets/images/Google@2x.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      #footer .social-network-gl {
+        background-image: url("/assets/images/Google@2x@2x.png"); } }
+  #footer a.footer-links-group-head {
+    color: #fff; }
+  #footer a.footer-links-group-link {
+    color: #9b9b9b; }
+  #footer .footer-links-group {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column; }
+    #footer .footer-links-group-blank a.footer-links-group-head {
+      visibility: hidden; }
+  #footer .footer-links {
+    margin-top: 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    font-size: 16px;
+    line-height: 170%; }
+  #footer .footer-credits {
+    margin-top: 60px;
+    display: -webkit-flex;
+    display: flex; }
+  #footer .footer-icons {
+    width: 345px;
+    -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+    padding-left: 60px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+    -webkit-align-items: right;
+            align-items: right;
+    margin: -15px; }
+    #footer .footer-icons .footer-icon {
+      margin: 15px; }
+  #footer .footer-long-text {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 146%;
+    color: #616161;
+    -webkit-flex-grow: 1;
+            flex-grow: 1; }
+    #footer .footer-long-text p {
+      margin-bottom: 15px; }
+
+@media only screen and (max-width: 1200px) {
+  .layout {
+    width: 1200px; }
+  #zero-percent .zero-percent-right-text-1 {
+    font-size: 37px; } }
+
+@media only screen and (max-width: 992px) {
+  .layout {
+    width: 922px; }
+  #welcome .welcome-h1 {
+    font-size: 48px; }
+  #welcome .welcome-h4 {
+    font-size: 25px; }
+  #zero-percent .zero-percent-left-text-2 {
+    font-size: 216px; }
+  #zero-percent .zero-percent-right-text-1 {
+    font-size: 28px; }
+  #payment-methods .payment-methods-register {
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin: 0; }
+    #payment-methods .payment-methods-register .ex-input-wrapper input {
+      width: 100%; }
+    #payment-methods .payment-methods-register .ex-input-wrapper, #payment-methods .payment-methods-register button.ex-btn {
+      width: 32%;
+      margin: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .layout {
+    width: 768px; }
+  #zero-percent {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    text-align: center; }
+    #zero-percent .zero-percent-left-text-1 {
+      display: none; }
+    #zero-percent .zero-percent-left-text-2 {
+      font-size: 299px;
+      line-height: 262px; }
+    #zero-percent .zero-percent-left-text-3 {
+      display: none; }
+    #zero-percent .zero-percent-left {
+      padding-left: 0;
+      width: 100%; }
+    #zero-percent .zero-percent-right {
+      width: 100%; }
+    #zero-percent .zero-percent-right-text-1 {
+      font-size: 22px;
+      line-height: 146%; }
+  #footer .footer-icons {
+    display: none; }
+  #footer .footer-social-networks {
+    border-bottom: none; }
+  #footer .footer-links-group > :not(:first-child), #footer .footer-links-group-blank {
+    display: none; }
+  #footer .footer-links-group a {
+    text-decoration: none; }
+  #footer .footer-links {
+    margin-top: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #464646; }
+  #footer .footer-credits {
+    margin-top: 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .layout {
+    width: 480px; }
+  #welcome {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    padding: 24px; }
+    #welcome .welcome-header-links {
+      display: none; }
+    #welcome .welcome-h1 {
+      margin-top: auto;
+      font-size: 40px;
+      font-weight: 200;
+      line-height: 120%; }
+    #welcome .welcome-h4 {
+      font-size: 24px;
+      line-height: 134%; }
+  #zero-percent {
+    padding: 60px 30px; }
+    #zero-percent .zero-percent-left-text-2 {
+      font-size: 248px;
+      line-height: 217px; }
+  #payment-methods {
+    padding-bottom: 60px; }
+    #payment-methods .payment-methods-list {
+      -webkit-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      overflow: hidden;
+      text-align: left;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-justify-content: left;
+              justify-content: left;
+      position: relative;
+      padding: 50px 0;
+      margin: 0; }
+      #payment-methods .payment-methods-list .payment-methods-method {
+        -webkit-flex-shrink: 0;
+                flex-shrink: 0;
+        width: 402px;
+        margin: 0;
+        text-align: center; }
+      #payment-methods .payment-methods-list:before {
+        background: url("/assets/images/arrow-left.png") no-repeat center;
+        left: 0; }
+      #payment-methods .payment-methods-list:after {
+        background: url("/assets/images/arrow-right.png") no-repeat center;
+        right: 0; }
+      #payment-methods .payment-methods-list:before, #payment-methods .payment-methods-list:after {
+        content: '';
+        position: absolute;
+        top: 65px;
+        width: 24px;
+        height: 44px;
+        background-size: contain;
+        cursor: pointer; }
+    #payment-methods .payment-methods-h3 {
+      font-size: 34px;
+      line-height: 134%;
+      font-weight: bold;
+      padding: 0 32px; }
+    #payment-methods .ex-input-wrapper {
+      display: none; }
+    #payment-methods .payment-methods-register {
+      -webkit-justify-content: center;
+              justify-content: center; }
+      #payment-methods .payment-methods-register button.ex-btn {
+        width: 300px; }
+    #payment-methods .payment-methods-disclaimer {
+      width: auto; }
+  #footer {
+    padding: 0 24px 40px 24px; } }
