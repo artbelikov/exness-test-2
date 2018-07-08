@@ -22,7 +22,11 @@ export default {
         require("autoprefixer")
       ],
       extract: 'public/style.css',
-      extensions: ['.css', '.scss', '.sass']
+      extensions: ['.css', '.scss', '.sass'],
+      minimize: production && {
+        minifyFontValues: false,
+        discardUnused: false
+      }
     }),
 		resolve(),
 		commonjs(),
