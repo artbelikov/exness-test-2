@@ -22,8 +22,7 @@ export default {
         require("autoprefixer")
       ],
       extract: 'public/style.css',
-      extensions: ['.css', '.scss', '.sass'],
-      minimize: production
+      extensions: ['.css', '.scss', '.sass']
     }),
 		resolve(),
 		commonjs(),
